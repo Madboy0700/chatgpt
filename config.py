@@ -15,19 +15,19 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get it from my.telegram.org
-API_ID = int(getenv("API_ID", 28121536 ))
-API_HASH = getenv("API_HASH","57d552d05f2a76244291d9eb330294c2")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN","7272255274:AAHix6fyTVhU54oO0kJ3kQJyM-TivDVyi4k")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # SUDO USERS
 SUDO_USER = list(
-    map(int, getenv("SUDO_USER", "7023083099").split())
+    map(int, getenv("SUDO_USER", "").split())
 )  # Input type must be interger
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1002461218502"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 
 # Message to display when someone starts your bot
 PRIVATE_START_MESSAGE = getenv(
