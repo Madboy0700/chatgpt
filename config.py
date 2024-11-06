@@ -23,7 +23,7 @@ BOT_TOKEN = getenv("BOT_TOKEN","7272255274:AAHix6fyTVhU54oO0kJ3kQJyM-TivDVyi4k")
 
 # SUDO USERS
 SUDO_USER = list(
-    map(int, getenv("SUDO_USER", "@AcelyaAsissistan").split())
+    map(int, getenv("SUDO_USER", "7023083099").split())
 )  # Input type must be interger
 
 # You'll need a Private Group ID for this.
